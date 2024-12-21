@@ -1,0 +1,31 @@
+.main-anchor-pane {
+    -fx-background-color: white;
+}
+
+.top-anchor-pane {
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.text-field {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: dashed;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-alignment: center;
+}
+
+.edit-your-fields-label {
+    -fx-text-fill: black;
+    -fx-font-family: "Bell MT";
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 20pt;
+}
+
+.shadow-fields {
+    -fx-border-style: solid;
+}

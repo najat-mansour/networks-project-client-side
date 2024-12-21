@@ -1,0 +1,13 @@
+.text-field, .shadow-fields {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-alignment: center;
+    -fx-border-width: 2px;
+    -fx-border-color: purple;
+    -fx-border-radius: 15px;
+    -fx-font-weight: bold;
+}
+
+.shadow-fields:focused {
+    -fx-effect: dropshadow(three-pass-box, rgba(128,0,128,0.3), 10, 0, 2, 2);
+}

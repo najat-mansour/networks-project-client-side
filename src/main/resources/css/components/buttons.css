@@ -1,0 +1,38 @@
+* {
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+}
+
+.btn-verify {
+    -fx-background-color: black;
+}
+
+.btn-verify:hover {
+    -fx-border-width: 0px;
+    -fx-text-fill: white;
+    -fx-background-color: purple;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.btn-clear {
+    -fx-background-color: black;
+}
+
+.btn-next {
+    -fx-background-color: green;
+}
+
+.btn-logout {
+    -fx-background-color: #f2b700;
+}
+
+.btn-previous {
+    -fx-background-color: red;
+}
+
+.btn-refresh {
+    -fx-background-color: purple;
+}

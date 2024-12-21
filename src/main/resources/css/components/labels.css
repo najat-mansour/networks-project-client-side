@@ -1,0 +1,37 @@
+* {
+    -fx-font-weight: bold;
+}
+
+.login-label {
+    -fx-font-style: italic;
+    -fx-font-family: "Bell MT";
+    -fx-font-size: 36pt;
+    -fx-text-fill: purple;
+}
+
+.warning-label {
+    -fx-text-fill: red;
+    -fx-visibility: hidden;
+}
+
+.author-label {
+    -fx-font-style: italic;
+    -fx-font-size: 22pt;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-family: "Bell MT";
+}
+
+.page-title-label {
+    -fx-text-fill: purple;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-family: "Bell MT";
+    -fx-font-size: 36pt;
+}
+
+.system-group-labels {
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-font-size: 10pt;
+}

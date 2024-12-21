@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.P3ArpTable">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="601.0" prefWidth="896.0" styleClass="main-anchor-pane" stylesheets="@../css/pages/p3_arp_table.css">
+         <children>
+            <Label layoutX="47.0" layoutY="16.0" styleClass="page-title-label" stylesheets="@../css/components/labels.css" text="ARP Table" />
+            <Button fx:id="btnRefresh" layoutX="418.0" layoutY="31.0" mnemonicParsing="false" onAction="#actionPerformed" styleClass="btn-refresh" stylesheets="@../css/components/buttons.css" text="Refresh" />
+            <Button fx:id="btnPrevious" layoutX="611.0" layoutY="32.0" mnemonicParsing="false" onAction="#actionPerformed" styleClass="btn-previous" stylesheets="@../css/components/buttons.css" text="Previous" />
+            <Button fx:id="btnLogout" layoutX="692.0" layoutY="31.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="26.0" prefWidth="61.0" styleClass="btn-logout" stylesheets="@../css/components/buttons.css" text="Logout" />
+            <Button fx:id="btnNext" layoutX="775.0" layoutY="32.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="26.0" prefWidth="56.0" styleClass="btn-next" stylesheets="@../css/components/buttons.css" text="Next" />
+            <TableView fx:id="arpTable" layoutX="266.0" layoutY="112.0" prefHeight="390.0" prefWidth="363.0" stylesheets="@../css/components/table.css">
+              <columns>
+                <TableColumn fx:id="indexColumn" prefWidth="75.0" text="Index" />
+                <TableColumn fx:id="macColumn" prefWidth="94.4000244140625" text="MAC Address" />
+                  <TableColumn fx:id="ipColumn" prefWidth="94.4000244140625" text="IP Address" />
+                  <TableColumn fx:id="ttlColumn" prefWidth="94.4000244140625" text="TTL" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtMac" layoutX="175.0" layoutY="532.0" onKeyTyped="#setArpTableData" promptText="MAC" styleClass="shadow-fields" stylesheets="@../css/components/text-feilds.css" />
+            <TextField fx:id="txtIp" layoutX="376.0" layoutY="532.0" onKeyTyped="#setArpTableData" promptText="IP" styleClass="shadow-fields" stylesheets="@../css/components/text-feilds.css" />
+            <TextField fx:id="txtTtl" layoutX="571.0" layoutY="532.0" onKeyTyped="#setArpTableData" promptText="TTL" styleClass="shadow-fields" stylesheets="@../css/components/text-feilds.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

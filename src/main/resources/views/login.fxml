@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="601.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Login">
+   <children>
+      <AnchorPane layoutX="451.0" prefHeight="601.0" prefWidth="445.0" styleClass="right-anchor-pane" stylesheets="@../css/pages/login.css">
+         <children>
+            <TextField fx:id="txtId" layoutX="109.0" layoutY="173.0" prefHeight="39.0" prefWidth="227.0" promptText="ID" styleClass="text-field" stylesheets="@../css/components/text-feilds.css" />
+            <TextField fx:id="txtUsername" layoutX="108.0" layoutY="243.0" prefHeight="39.0" prefWidth="227.0" promptText="Username" styleClass="text-field" stylesheets="@../css/components/text-feilds.css" />
+            <PasswordField fx:id="password" layoutX="109.0" layoutY="314.0" prefHeight="39.0" prefWidth="227.0" promptText="Password" styleClass="text-field" stylesheets="@../css/components/text-feilds.css" />
+            <Button fx:id="btnVerifyByUsername" layoutX="234.0" layoutY="448.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="39.0" prefWidth="134.0" styleClass="btn-verify" stylesheets="@../css/components/buttons.css" text="Verify By Username" />
+            <Button fx:id="btnVerifyById" layoutX="77.0" layoutY="448.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="39.0" prefWidth="134.0" styleClass="btn-verify" stylesheets="@../css/components/buttons.css" text="Verify By ID" />
+            <Button fx:id="btnClear" layoutX="76.0" layoutY="510.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="39.0" prefWidth="293.0" styleClass="btn-clear" stylesheets="@../css/components/buttons.css" text="Clear" />
+            <Label fx:id="lblIdIsRequired" layoutX="183.0" layoutY="212.0" prefHeight="18.0" prefWidth="77.0" styleClass="warning-label" stylesheets="@../css/components/labels.css" text="ID is required" visible="false" />
+            <Label fx:id="lblUsernameIsRequired" layoutX="160.0" layoutY="282.0" prefHeight="18.0" prefWidth="122.0" styleClass="warning-label" stylesheets="@../css/components/labels.css" text="Username is required" visible="false" />
+            <Label fx:id="lblPasswordIsRequired" layoutX="160.0" layoutY="353.0" prefHeight="18.0" prefWidth="122.0" styleClass="warning-label" stylesheets="@../css/components/labels.css" text="Password is required" visible="false" />
+            <Label fx:id="lblSignIn" layoutX="103.0" layoutY="59.0" prefHeight="58.0" prefWidth="157.0" styleClass="login-label" stylesheets="@../css/components/labels.css" text="Sign In" />
+            <ImageView fitHeight="90.0" fitWidth="88.0" layoutX="257.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sign-in.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="progressBar" layoutX="83.0" layoutY="398.0" prefHeight="18.0" prefWidth="278.0" progress="0.0" stylesheets="@../css/components/progress-bar.css" />
+            <ImageView fx:id="imgViewIdCorrect" fitHeight="31.0" fitWidth="41.0" layoutX="361.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/correct.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgViewUsernameCorrect" fitHeight="31.0" fitWidth="41.0" layoutX="361.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/correct.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="602.0" prefWidth="446.0" styleClass="left-anchor-pane" stylesheets="@../css/pages/login.css">
+         <children>
+            <ImageView fitHeight="261.0" fitWidth="454.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/SNMP.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="515.0" prefHeight="48.0" prefWidth="354.0" styleClass="author-label" stylesheets="@../css/components/labels.css" text="Mohammad Alawneh" />
+            <Label layoutX="114.0" layoutY="467.0" prefHeight="48.0" prefWidth="278.0" styleClass="author-label" stylesheets="@../css/components/labels.css" text="Najat S. Mansour" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="147.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stats.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="78.0" layoutX="37.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/copyrights.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
